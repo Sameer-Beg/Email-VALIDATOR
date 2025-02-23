@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: wheat;
+    padding: 27px 12px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 23px;
+    font-size: 30px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul > li > a:hover{
+    color: pink;
+}
+
+main{
+    min-height: 80vh;
+}
+.logo img{
+    width: 40px;
+    filter: invert(1); 
+}
+
+.container{
+    /* background-color: rebeccapurple; */
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+}
+
+.container h1{
+    padding: 12px 0;
+}
+
+input[type='text']{
+    min-width: 24vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+
+.btn{
+    background-color: black;
+    color: wheat;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultcont div::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+           
+    }
+    .logo img{
+        width: 20px;
+        filter: invert(1); 
+    }
+ 
+
+  
+
+}
+
+
+footer{
+    background-color: black;
+    color: wheat;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
